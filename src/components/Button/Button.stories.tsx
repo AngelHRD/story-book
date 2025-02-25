@@ -28,7 +28,7 @@ const meta = {
             },
         },
     },
-    // tags: ["autodocs"], // Permet d'avoir la doc automatiquement
+    tags: ["autodocs"], // Permet d'avoir la doc automatiquement
 } satisfies Meta<typeof Button>;
 
 export default meta;

@@ -8,8 +8,6 @@ type ButtonProps = ComponentProps<"button"> & {
     size: "large" | "medium" | "small";
 };
 
-// DOCS DE STORYBOOK DANS LE COMPONENT
-
 /**
  * Composant Button
  *

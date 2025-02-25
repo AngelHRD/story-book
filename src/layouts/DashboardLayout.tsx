@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 export const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <div className="flex min-h-screen">
-            <aside className="flex flex-col w-64 bg-slate-700 text-white py-4">
+            <aside className="flex flex-col w-64 bg-slate-900  text-white py-4">
                 <div className="flex justify-center pt-2">
                     <img src="/assets/img/logo.webp " alt="Looney Toons" className="w-35 h-35" />
                 </div>

@@ -21,7 +21,7 @@ const meta = {
         },
         percentage: {
             control: "number",
-            name: "Pourcentage",
+            name: "percentage",
         },
         type: {
             name: "Type de variation",

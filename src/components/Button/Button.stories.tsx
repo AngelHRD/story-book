@@ -28,7 +28,7 @@ const meta = {
             },
         },
     },
-    tags: ["autodocs"], // Permet d'avoir la doc automatiquement
+    // tags: ["autodocs"], // Permet d'avoir la doc automatiquement
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -55,6 +55,7 @@ export const Secondary: Story = {
         size: "medium",
     },
 };
+
 export const Tertiary: Story = {
     name: "Boutton tertiaire",
     args: {
@@ -64,15 +65,3 @@ export const Tertiary: Story = {
         size: "small",
     },
 };
-
-// { Type StoryObj --> Générique
-//     name : string,
-//     args: unknown,
-//     options: array
-//     }
-
-// { Type StoriObj<typeof Button>
-//     name : string,
-//     args: type Button,
-//     options: array
-//     }

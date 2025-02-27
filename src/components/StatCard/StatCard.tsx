@@ -51,15 +51,15 @@ export function StatCard({
     const formattedAmount = formatAmount(amount, currency);
 
     return (
-        <div className="w-64 rounded-md bg-white p-4 shadow-md text-black">
+        <div className="w-64 rounded-md bg-white dark:bg-gray-800 p-4 shadow-md text-black dark:text-white">
             <div className="mb-2 flex items-center justify-between">
-                <h3 className="text-sm font-medium text-gray-500">{title}</h3>
+                <h3 className="font-medium text-gray-500 dark:text-gray-400">{title}</h3>
                 <span
                     className={clsx(
                         "px-2 py-1 text-xs font-semibold rounded-full flex items-center gap-1",
-                        type === "increase" && "bg-green-100 text-green-500",
-                        type === "decrease" && "bg-red-100 text-red-500",
-                        type === "neutral" && "bg-gray-100 text-gray-500"
+                        type === "increase" && "bg-green-100 dark:bg-green-900 text-green-500 dark:text-green-400",
+                        type === "decrease" && "bg-red-100 dark:bg-red-900 text-red-500 dark:text-red-400",
+                        type === "neutral" && "bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400"
                     )}
                 >
                     {type === "increase" && (
@@ -100,9 +100,9 @@ export function StatCard({
                 </span>
             </div>
 
-            <p className="text-2xl font-bold mb-1">{formattedAmount}</p>
+            <p className="text-2xl font-bold mb-1 dark:text-white">{formattedAmount}</p>
 
-            <p className="text-xs text-gray-400">{description}</p>
+            <p className="text-xs text-gray-400 dark:text-gray-500">{description}</p>
         </div>
     );
 }
